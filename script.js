@@ -40,11 +40,12 @@ $(document).ready(function(){
         });
 
 
-  $("button").on("click", function(){
-    $('input, select, textarea').each(function() {
-     var value = $(this).val(),
-         name = $(this).attr('name');
-     localStorage[name] = value;
-        
-    })});
+  $("button").on("click", () => {
+      $('input, select, textarea').each(function () {
+        var value = $(this).val(),
+        name = $(this).attr('name');
+        localStorage[name] = value;
+
+      });
+    });
 
