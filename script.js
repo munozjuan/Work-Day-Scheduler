@@ -18,7 +18,17 @@ $(document).ready(function(){
 
     $('.HourRow').each(function(i) {
         console.log(time.indexOf(currentTime));
-       
+        if (timeArray.indexOf(currentTime) > i) {
+            $(`#${i}`).addClass('past');
+            $(`#saveToDo-${i}`).prop('disabled', true);
+            $(`#saveToDo-${i}`).addClass('past');
+            $(`#hour-${i}`).addClass('past');
+          } 
+          else if (timeArray.indexOf(currentTime) == i) {
+            $(`#${i}`).addClass('present');
+            $(`#saveToDo-${i}`).addClass('present');
+            $(`#saveToDo-${i}`).prop('disabled', false);
+            $(`#hour-${i}`).addClass('present');
         
       });
 
