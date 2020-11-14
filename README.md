@@ -1,7 +1,7 @@
 # Work-Day-Scheduler
 # Juan Munoz
 
-![scheduler](/images/pic1.png) 
+![scheduler](/images/pics1.png) 
 
 
  
