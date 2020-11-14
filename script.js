@@ -29,11 +29,22 @@ $(document).ready(function(){
             $(`#saveToDo-${i}`).addClass('present');
             $(`#saveToDo-${i}`).prop('disabled', false);
             $(`#hour-${i}`).addClass('present');
+          }
+          else if (timeArray.indexOf(currentTime) < i) {
+                $(`#${i}`).addClass('future');
+                $(`#saveToDo-${i}`).addClass('future');
+                $(`#saveToDo-${i}`).prop('disabled', false);
+                $(`#hour-${i}`).addClass('future');
+              }
+            });
+        });
+
+
+  $("button").on("click", function(){
+    $('input, select, textarea').each(function() {
+     var value = $(this).val(),
+         name = $(this).attr('name');
+     localStorage[name] = value;
         
-      });
-
-
-
-
-})
+    })});
 
