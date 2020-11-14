@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
     $('.HourRow').each(function(i) {
-        console.log(timeArray.indexOf(currentTime));
+        console.log(time.indexOf(currentTime));
        
         
       });
