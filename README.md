@@ -31,7 +31,7 @@
 ## Description  
 
  
--  This calendar application allows the user to input information. It then allows the user to save information for every hour. 
+-  This calendar application allows the user to input information. It then allows the user to save information for every hour. I used Moment.js to work with dates and times. I want to manage my time effectively, as an employee with a hectic schedule, I want to add importan events to my daily planner; so, I made this application to facilitate that. 
  
 
 #### Technologies 
@@ -93,7 +93,7 @@
  
 
 - Website - [JuanMunoz]( https://github.com/munozjuan) 
--link - [Code](https://munozjuan.github.io/code-Quiz/)
+-link - [Code](https://github.com/munozjuan/Work-Day-Scheduler/)
 
  
 
