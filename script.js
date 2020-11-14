@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
     // Time Array of the hours in our scheduler
-    var times = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"]
+    var timeArray = ["9 AM", "10 AM", "11 AM", "12 PM", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM"]
     // current time moment.js
     var currentTime = moment().format("h A");
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 
     $('.HourRow').each(function(i) {
-        console.log(time.indexOf(currentTime));
+        console.log(timeArray.indexOf(currentTime));
         if (timeArray.indexOf(currentTime) > i) {
             $(`#${i}`).addClass('past');
             $(`#saveToDo-${i}`).prop('disabled', true);
